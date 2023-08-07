@@ -98,7 +98,7 @@ h4 {
     gap: .625em; /* 10px */
     max-width: 374px;
     margin: 0 auto 41px;
-    padding: 10px;
+    padding: 0 20px;
 }
 
 
@@ -225,13 +225,14 @@ header button:focus,
     gap: 1.63em; /* 26px */
     margin: 35px auto; 
     max-width: 374px;
+    padding: 0 20px;
 }
 
 .recent-container {
     display: grid;
     grid-template: repeat(auto-fill, minmax(374px, 1fr));
     gap: 1.63em; /* 26px */
-    margin: 35px 20px; /* 35px 20px */
+    margin: 35px auto; /* 35px 20px */
     box-sizing: border-box;
 }
 
@@ -252,6 +253,7 @@ header button:focus,
     gap: 1.63em; /* 26px */
     margin: 35px auto; 
     max-width: 374px;
+    padding: 0 20px;
 }
 
 .aboutme-content p {
