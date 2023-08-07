@@ -129,7 +129,6 @@ h4 {
     margin: 0 auto 41px;
     font-weight: bold;
     color:#090909;
-
 }
 
 /* text styles */
@@ -224,7 +223,7 @@ header button:focus,
     display: flex;
     flex-direction: column;
     gap: 1.63em; /* 26px */
-    margin: 35px auto; 
+    margin: 50px auto; 
     max-width: 374px;
     padding: 0 20px;
 }
@@ -252,7 +251,7 @@ header button:focus,
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.63em; /* 26px */
-    margin: 35px auto; 
+    margin: 50px auto; 
     max-width: 374px;
     padding: 0 20px;
 }

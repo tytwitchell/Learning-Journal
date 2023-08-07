@@ -1,4 +1,4 @@
-import {postData} from './data.js';
+import { postData } from './data.js';
 
 
 const homePgContent = document.getElementById('home-pg-content')
@@ -6,24 +6,16 @@ const postPreviewEl = document.getElementsByClassName('post-preview')
 
 
 document.addEventListener('click', function(e){
-    if(e.target.id === 'home-btn'){
-        
+    const targetId = e.target.id;
+    if(targetId === 'home-btn'){
         handleHomeBtnClick()
-    } 
-
-    if(e.target.id === 'aboutme-btn'){
+    } else if (targetId === 'aboutme-btn'){
         handleAboutMeBtnClick()
-    }
-
-    if(e.target.classList.contains('post-click')){
-        
+    } else if (targetId === 'more-btn'){
+        handleMoreBtnClick()
+    } else if (e.target.classList.contains('post-click')){
         let selectedPostUuid = e.target.dataset.uuid
         handlePostClick(selectedPostUuid)
-
-    }
-
-    if(e.target.id === 'more-btn'){
-        handleMoreBtnClick()
     }
 
 })
