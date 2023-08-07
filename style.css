@@ -1,0 +1,330 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #FAFAFA;
+}
+
+/******************* Header **********************/
+
+
+header {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em 1em;
+    background: #ffff;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: .313em;  /* 5px */
+    box-shadow: 0 0 7px;
+    z-index: 999;
+}
+
+.header-nav{
+    margin-left: auto;
+}
+
+
+/******************* Footer **********************/
+
+footer {
+    background: #202020;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+h4,
+.copyright {
+    margin: 0;
+}
+
+h4 {
+    margin-top: 31px;
+    color: #ECECEC;
+    font-size: .75em; /* 12px */
+}
+.copyright {
+    margin-bottom: 31px;
+    color: #D7D7D7;
+    font-weight: lighter;
+    font-size: .75em; /* 12px */
+}
+
+/******************** Home Page *********************/
+
+/* containers */
+
+.feat-post{
+    background-size: cover;
+    color: #ffff;
+    padding-top: 59px;
+    display: grid;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+}
+
+.feat-content{
+    display: flex;
+    flex-direction: column;
+    margin: 87px 20px 20px;
+    gap: .625em; /* 10px */
+    align-self: end;
+
+}
+
+.feat-description {
+    max-width: 550px;
+}
+
+.entries-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(374px, 1fr));
+    gap: 1.63em; /* 26px */
+    margin: 35px 20px; /* 35px 20px */
+}
+
+.post-preview {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: .625em; /* 10px */
+    max-width: 374px;
+    margin: 0 auto 41px;
+}
+
+
+.post-preview:hover,
+.post-preview:focus,
+.feat-post:hover,
+.feat-post:focus {
+    transform: scale(.985);
+    opacity: .9;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.1s ease;
+    border-radius: 5px;
+
+}
+
+.post-content:last-child {
+    margin-bottom: 0;
+}
+
+/* btn */
+
+.more-btn {
+    display: block;
+    border: none;
+    background: none;
+    margin: 0 auto 41px;
+    font-weight: bold;
+
+}
+
+/* text styles */
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+header h3 { 
+    font-size: .85em; /* 13.55 */
+
+}
+
+header button{
+    margin-right: 1.25em; /* 20px */
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #090909;
+    font-weight: 500;
+    font-size: .75em; /* 12px */
+
+}
+
+header button:hover,
+header button:focus,
+.more-btn:hover,
+.more-btn:focus {
+    opacity: .6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post-date {
+    font-size: .75em; /* 12px */
+    margin-top: 3.125em; /* 50px */
+}
+
+.entry-date{
+    font-size: .89em; /* 14.77px */
+}
+
+.post-preview p {
+    font-weight: lighter;
+}
+
+.bold,
+.recent-text {
+    font-weight: bold;
+}
+
+.recent-text {
+    display: inline-block;
+    margin: 27px auto 0;
+    grid-column: 1/-1;
+
+}
+
+.hidden {
+    display: none;
+}
+
+/* imgs */
+
+.preview-img {
+    max-width: 374px;
+    height: 232px;
+    border-radius: 3px;
+    margin: 0 0 7px;
+}
+
+.post-img {
+    max-width: 374px;
+    height: 191px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    align-self: center;
+
+}
+
+.pro-pic {
+    width: 182px;
+    margin-top: 2.5em; /* 40px */
+}
+
+
+
+/******************* Blogpost Page **********************/
+
+.full-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1.63em; /* 26px */
+    margin: 35px auto; 
+    max-width: 374px;
+}
+
+.recent-container {
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(374px, 1fr));
+    gap: 1.63em; /* 26px */
+    margin: 35px 20px; /* 35px 20px */
+    box-sizing: border-box;
+}
+
+.recent-post-container {
+    display: grid;
+    grid-template: auto 1fr / repeat(auto-fill, minmax(374px, 1fr));
+    gap: 1.63em; /* 26px */
+    box-sizing: border-box;
+    
+}
+
+/******************* About Me Page **********************/
+
+
+.aboutme-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.63em; /* 26px */
+    margin: 35px auto; 
+    max-width: 374px;
+}
+
+.aboutme-content p {
+    margin-bottom: 1.63em; /* 26px */
+}
+
+
+/* media */
+
+@media (min-width: 600px) {
+    .feat-post{
+        min-height: 488px;
+    }
+}
+
+@media (min-width:1200px){
+
+    /* blog post media */
+
+    .full-post {
+        display: flex;
+        gap: 1.63em; /* 26px */
+        margin: 50px auto; 
+        max-width: 844px;
+    }
+
+    .post-img {
+        max-width: none;
+        width: 979px;
+        height: 488px;
+
+    }
+
+ 
+    /* about me page media */
+
+    .aboutme-content {
+        display: grid;
+        grid-template: auto auto / 1em 1.5em 150px 1fr 1.5em 1em;
+        gap: 1.63em; /* 26px */
+        margin: 50px auto;
+        max-width: 1100px;
+    }
+
+    .pro-pic {
+        grid-column: 2 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .aboutme-content h1 {
+        grid-column: 4 / -3;
+        grid-row: 1;
+        align-self: center;
+
+    }
+
+    .post-description {
+        grid-column: 4 / -3;
+        grid-row: 1;
+        align-self: end;
+
+        
+    }
+
+    .aboutme-paragraphs {
+        grid-column: 3 / -3;
+        grid-row: 4;
+    
+
+    }
+
+    .aboutme-content p {
+        margin-bottom: 1.63em; /* 26px */
+    }
+
+}
