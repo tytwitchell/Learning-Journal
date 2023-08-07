@@ -88,7 +88,7 @@ h4 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(374px, 1fr));
     gap: 1.63em; /* 26px */
-    margin: 35px 20px; /* 35px 20px */
+    margin: 35px auto; /* 35px 20px */
 }
 
 .post-preview {
@@ -98,6 +98,7 @@ h4 {
     gap: .625em; /* 10px */
     max-width: 374px;
     margin: 0 auto 41px;
+    padding: 10px;
 }
 
 
@@ -141,17 +142,16 @@ p {
 header h3 { 
     font-size: .85em; /* 13.55 */
 
+
 }
 
 header button{
-    margin-right: 1.25em; /* 20px */
     background: none;
     border: none;
     text-decoration: none;
     color: #090909;
     font-weight: 500;
     font-size: .75em; /* 12px */
-
 }
 
 header button:hover,
@@ -259,7 +259,7 @@ header button:focus,
 }
 
 
-/* media */
+/********* media ***********/
 
 @media (min-width: 600px) {
     .feat-post{
