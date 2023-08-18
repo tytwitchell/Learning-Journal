@@ -134,6 +134,7 @@ function handlePostClick(postId){
     }
 
     renderRandomPost();
+    window.scrollTo(0, 0);
 }
 
 function handleMoreBtnClick(){
